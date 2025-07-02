@@ -1,0 +1,171 @@
+
+body {
+    background: linear-gradient(135deg, #f8dd93, #fca534e0);
+  background-attachment: fixed;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+}
+
+header::after{
+  content: "";
+    display: block;
+    width: 700px;
+    height: 20px;
+    background: url(../img/wings-diamond.svg) no-repeat center;
+    margin: 0px auto 0;
+}
+
+.container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      padding: 20px;
+      max-width: calc(200px * 6 + 20px * 5 + 40px);
+      margin: 0 auto 50px;
+      width: 100%;
+    margin-bottom: 50px;
+}
+
+.block {
+  position: relative;
+  background: rgb(240, 235, 204);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  transition: transform 0.3s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.block:nth-child(2) { animation-delay: 0.1s; }
+.block:nth-child(3) { animation-delay: 0.1s; }
+.block:nth-child(4) { animation-delay: 0.2s; }
+.block:nth-child(5) { animation-delay: 0.2s; }
+.block:nth-child(6) { animation-delay: 0.3s; }
+.block:nth-child(7) { animation-delay: 0.3s; }
+.block:nth-child(8) { animation-delay: 0.4s; }
+.block:nth-child(9) { animation-delay: 0.4s; }
+.block:nth-child(10) { animation-delay: 0.5s; }
+.block:nth-child(11) { animation-delay: 0.5s; }
+.block:nth-child(12) { animation-delay: 0.6s; }
+.block:nth-child(13) { animation-delay: 0.6s; }
+
+.block.fade-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.block:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.block img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.block h3 {
+    margin: 10px 0 5px;
+    font-family: cursive;
+    font-size: 20px;
+    color: black;
+}
+
+.block .price {
+    font-size: 18px;
+    font-family:cursive;
+    color: black;
+    font-weight: bold;
+}
+
+.category {
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    color: #350049;
+    margin: 40px 0 20px;
+    margin-top: 40px; /* Отступ сверху у заголовка */
+  margin-bottom: 20px; /* Отступ снизу у заголовка */
+
+}
+
+.category:hover {
+  color: #000000;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.category::after {
+  content: "";
+    display: block;
+    width: 600px;
+    height: 50px;
+    background: url(../img/curtain-rod-arrowhead.svg) no-repeat center;
+  background-size: contain;
+    margin: 8px auto 0;
+}
+
+/*бургер меню*/
+/* Кнопка-бургер */
+.burger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.burger span {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Меню сбоку */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 200px;
+  height: 100%;
+  background: rgba(255, 158, 1, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 60px 20px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.side-menu.show {
+  left: 0;
+}
+
+/* Плавный скролл */
+html {
+  scroll-behavior: smooth;
+}

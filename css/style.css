@@ -1,0 +1,37 @@
+.about_me {
+    margin: 10px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #82ffde;
+    background: linear-gradient(90deg, rgba(130, 255, 222, 1) 0%, rgba(125, 177, 255, 1) 100%, rgba(112, 255, 172, 1) 50%, rgba(0, 255, 115, 1) 94%);
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(10px);/*для яблок*/
+    
+}
+
+.btn {
+  display: block;
+  margin: 15px;
+  place-items: center;
+  background-color:greenyellow;
+  border-radius: 20px;
+  border:none;
+  padding: 12px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background:rgb(3, 216, 13);
+  }
+
