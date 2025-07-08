@@ -14,7 +14,7 @@ header::after{
     display: block;
     width: 700px;
     height: 20px;
-    background: url(../img/wings-diamond.svg) no-repeat center;
+    background: url(../img/svg/wings-diamond.svg) no-repeat center;
     margin: 0px auto 0;
 }
 
@@ -44,18 +44,6 @@ header::after{
   transform: translateY(20px);
 }
 
-.block:nth-child(2) { animation-delay: 0.1s; }
-.block:nth-child(3) { animation-delay: 0.1s; }
-.block:nth-child(4) { animation-delay: 0.2s; }
-.block:nth-child(5) { animation-delay: 0.2s; }
-.block:nth-child(6) { animation-delay: 0.3s; }
-.block:nth-child(7) { animation-delay: 0.3s; }
-.block:nth-child(8) { animation-delay: 0.4s; }
-.block:nth-child(9) { animation-delay: 0.4s; }
-.block:nth-child(10) { animation-delay: 0.5s; }
-.block:nth-child(11) { animation-delay: 0.5s; }
-.block:nth-child(12) { animation-delay: 0.6s; }
-.block:nth-child(13) { animation-delay: 0.6s; }
 
 .block.fade-up {
   opacity: 1;
@@ -63,7 +51,7 @@ header::after{
 }
 
 .block:hover {
-  transform: translateY(-5px) scale(1.03);
+  transform: translateY(-5px) scale(1.1);
 }
 
 .block img {
@@ -109,7 +97,7 @@ header::after{
     display: block;
     width: 600px;
     height: 50px;
-    background: url(../img/curtain-rod-arrowhead.svg) no-repeat center;
+    background: url(../img/svg/curtain-rod-arrowhead.svg) no-repeat center;
   background-size: contain;
     margin: 8px auto 0;
 }
@@ -164,7 +152,7 @@ header::after{
   left: 0;
 }
 
-/* Плавный скролл */
+
 html {
   scroll-behavior: smooth;
 }
@@ -172,7 +160,6 @@ html {
 /*для телефонов*/
 @media (max-width: 768px) {
 
-  /* Меньше отступы и размеры заголовков */
   .category {
     font-size: 24px;
     margin-top: 30px;
@@ -209,7 +196,6 @@ html {
     font-size: 16px;
   }
 
-  /* Бургер больше и удобнее для тапа */
   .burger {
     top: 15px;
     left: 15px;

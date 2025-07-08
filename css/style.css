@@ -1,4 +1,4 @@
-.about_me {
+.general {
     margin: 10px;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,26 +12,191 @@
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     padding: 20px;
+    margin-bottom: 15px;
     border-radius: 20px;
+    text-align: center;
     -webkit-backdrop-filter: blur(10px);/*для яблок*/
-    
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover{
+  background: rgba(255, 255, 255, 0.651);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .btn {
-  display: block;
-  margin: 15px;
-  place-items: center;
+  display:inline-block ;
+  line-height: 55px; 
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px 0;
   background-color:greenyellow;
-  border-radius: 20px;
+  border-radius: 3px;
   border:none;
-  padding: 12px 30px;
+  padding: 12px 10px;
+  height: 55px;
+  min-width: 200px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 600;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
 }
 
-.btn:hover {
+.btn_left {
+  display:inline-block ;
+  line-height: 55px; 
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px 0;
+  background-color:greenyellow;
+  border-radius: 3px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 55px;
+  min-width: 200px;
+  border:none;
+  padding: 12px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.btn_right {
+  display:inline-block ;
+  line-height: 55px; 
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px 0;
+  background-color:greenyellow;
+  border-radius: 3px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 55px;
+  min-width: 200px;
+  border:none;
+  padding: 12px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 3px; 
+}
+
+
+
+
+.btn_left:hover {
+  transition: all 0.5s ease;
     background:rgb(3, 216, 13);
+    transform: scale(1.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   }
 
+.btn:hover {
+  transition: all 0.5s ease;
+    background:rgb(3, 216, 13);
+    transform: scale(1.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn_right:hover {
+  transition: all 0.5s ease;
+    background:rgb(3, 216, 13);
+    transform: scale(1.15);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  }
+
+.btn a,
+.btn_left a,
+.btn_right a {
+  color:rgb(48, 0, 130);
+}
+
+/*contacts*/
+.contacts {
+    margin: 10px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #82ffde;
+    background: linear-gradient(90deg, rgb(247, 255, 130) 0%, rgb(245, 181, 108) 100%, rgba(112, 255, 172, 1) 50%, rgba(0, 255, 115, 1) 94%);
+    display: grid;
+    place-items: center;
+}
+/*about_me*/
+.about_me {
+    margin: 10px;
+    margin-top: 60px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #82ffde;
+    background: linear-gradient(90deg, rgb(208, 167, 255) 0%, rgb(118, 103, 255) 100%, rgba(112, 255, 172, 1) 50%, rgba(0, 255, 115, 1) 94%);
+    display: grid;
+    place-items: center;
+}
+details {
+  margin: 3px 0;
+  width: 100%;
+  border: 1px ;
+  text-indent: 20px;
+  border-radius: 6px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+summary {
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  flex: 1;
+}
+summary::marker {
+  color: #444;
+}
+
+details[open]{
+   background: rgba(255, 255, 255, 0.7);
+}
+
+details:hover{
+  background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile {
+  min-width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.details-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  font-size: 23px;
+  flex-wrap: wrap;
+}
