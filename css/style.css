@@ -200,3 +200,52 @@ details:hover{
   font-size: 23px;
   flex-wrap: wrap;
 }
+
+/*для телефона*/
+@media (max-width: 600px){
+  .btn,
+  .btn_left,
+  .btn_right {
+    min-width: 100%;
+    font-size: 18px;
+    width: 30px;
+    height: auto;
+    padding: 10px;
+    margin: 10px 0;
+    line-height: 27px;
+    border-radius: 15px;
+  }
+
+  .button-group {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content:center; 
+  gap: 3px; 
+}
+
+.profile-box, .details-box {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    max-width: 300px;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .profile {
+  max-width: 100px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+  details {
+    padding: 10px;
+    font-size: 5px;
+  }
+
+  summary {
+    font-size: 18px;
+  }
+}
