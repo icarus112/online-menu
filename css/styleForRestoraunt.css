@@ -145,7 +145,7 @@ header::after{
   font-size: 18px;
   color: #333;
   text-decoration: none;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .side-menu.show {
